@@ -50,4 +50,4 @@ Endpoints:
   Protocols:
   - postgresql
 Install-Build-Required: false
-Source-Url:  
+Source-Url: https://github.com/openshift-qe/cartridge-postgresql.git
