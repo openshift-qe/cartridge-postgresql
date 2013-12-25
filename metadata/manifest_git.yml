@@ -50,12 +50,12 @@ Endpoints:
   Protocols:
   - postgresql
 Version-Overrides:
-  '8.4':
-    Display-Name: PostgreSQL 8.4
+  '9.2':
+    Display-Name: PostgreSQL 9.2
     Provides:
     - postgresql-8.4
     - postgresql
-    - postgresql(version) = 8.4
+    - postgresql(version) = 9.2
 
 Install-Build-Required: false
 Source-Url: https://github.com/openshift-qe/cartridge-postgresql.git
