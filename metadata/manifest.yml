@@ -1,5 +1,5 @@
 ---
-Name: postgresql
+Name: postgresql-qe
 Architecture: noarch
 Cartridge-Short-Name: POSTGRESQL
 Cartridge-Version: 0.3.5
