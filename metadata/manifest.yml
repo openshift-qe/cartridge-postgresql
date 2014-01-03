@@ -2,13 +2,14 @@
 Name: postgresqlqe
 Architecture: noarch
 Cartridge-Short-Name: POSTGRESQLQE
-Cartridge-Version: 0.3.5
+Cartridge-Version: 0.3.9
 Compatible-Versions: []
 Cartridge-Vendor: openshiftqe
 Display-Name: PostgreSQL 9.2
 Description: PostgreSQL is an advanced Object-Relational database management system
 Version: '9.2'
 Versions:
+- '8.4'
 - '9.2'
 License: ASL 2.0
 Vendor: openshiftqe 
@@ -52,7 +53,7 @@ Version-Overrides:
   '9.2':
     Display-Name: PostgreSQL 9.2
     Provides:
-    - postgresql-9.2
+    - postgresql-8.4
     - postgresql
     - postgresql(version) = 9.2
 
