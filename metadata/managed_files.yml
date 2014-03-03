@@ -1,0 +1,15 @@
+---
+locked_files:
+- bin/
+- bin/*
+- conf/
+- conf/postgresql.conf.erb.hidden
+- env/
+- env/*
+- metadata/
+- hooks/
+- hooks/*
+- lib/
+- lib/*
+processed_templates:
+- '**/*.erb'
