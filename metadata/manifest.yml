@@ -53,4 +53,5 @@ Endpoints:
   - postgresql
 Install-Build-Required: false
 
-Source-Url: https://github.com/openshift-qe/custom-cart-postgresql.git
+Source-Url: https://github.com/openshift-qe/cartridge-postgresql.git
+#Source-Url: https://github.com/openshift-qe/custom-cart-postgresql.git
