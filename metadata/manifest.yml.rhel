@@ -7,11 +7,12 @@ Compatible-Versions:
 - 0.3.5
 - 0.3.6
 - 0.3.7
-Cartridge-Vendor: openshiftqe 
+Cartridge-Vendor: redhat
 Display-Name: PostgreSQL 9.2
 Description: PostgreSQL is an advanced Object-Relational database management system
 Version: '9.2'
 Versions:
+- '8.4'
 - '9.2'
 License: ASL 2.0
 Vendor: Red Hat
@@ -41,6 +42,8 @@ Provides:
 Publishes:
   publish-db-connection-info:
     Type: ENV:NET_TCP:db:connection-info
+  publish-ld-library-path-info:
+    Type: ENV:NET_TCP:db:ld-library-path-info
 Scaling:
   Min: 1
   Max: 1
@@ -51,6 +54,10 @@ Endpoints:
   Public-Port-Name: DB_PROXY_PORT
   Protocols:
   - postgresql
-Install-Build-Required: false
-
-Source-Url: https://github.com/openshift-qe/custom-cart-postgresql.git
+Version-Overrides:
+  '8.4':
+    Display-Name: PostgreSQL 8.4
+    Provides:
+    - postgresql-8.4
+    - postgresql
+    - postgresql(version) = 8.4
